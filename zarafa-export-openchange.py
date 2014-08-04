@@ -39,7 +39,7 @@ def format():
 	        for subdirname in dirnames:
 	            if 'new' in subdirname:
 	                for file in os.listdir(os.path.join(dirname, subdirname)):
-	                    shutil.move(os.path.join(dirname, subdirname) + '/' + file, os.path.join(dirname, 'cur'))
+	                    shutil.move(os.path.join(dirname, subdirname) + '/' + file, os.path.join(dirname, 'cur') + '/' + file + ':2,S')
 	        
 	
 	    for folder in os.listdir(wd):
