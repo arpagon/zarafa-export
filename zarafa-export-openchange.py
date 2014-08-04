@@ -44,7 +44,7 @@ def format():
 	
 	    for folder in os.listdir(wd):
 	        if (folder == ".Sent Items"):
-	            shutil.move (wd + '/' + folder, wd + '/Maildir/Sent')
+	            shutil.move (wd + '/' + folder, wd + '/Maildir/.Sent')
 	        elif (folder == '.Inbox'):
 	            for file in os.listdir(wd + '/' + folder):
 	                shutil.move(wd + '/' + folder + '/' + file, wd + '/Maildir/')
